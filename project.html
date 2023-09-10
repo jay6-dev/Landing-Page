@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artificial Intelligence</title>
+  
+</head>
+
+<style>
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #f0f0f0, #d3d3d3);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.apply-button,
+.secondary-button
+ {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.apply-button:hover,
+.secondary-button:hover
+ {
+  background-color: #0056b3;
+}
+
+.secondary-button {
+  margin-top: 10px;
+}
+img {
+            display: block;
+            margin: 0 auto; 
+        }
+
+</style>
+<body>
+  <div class="container">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/090/434/original/images_ai.jpg?1689681141" alt="Description of the image">
+
+    <h1>
+      Welcome to the World of Artificial Intelligence
+    </h1>
+    
+    <p>
+      Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems. Specific applications of AI include expert systems, natural language processing, speech recognition and machine vision.
+    </p>
+    <p>
+      Explore the possibilities and learn more about AI's impact on our lives.
+    </p>
+    <div class="button-container">
+      <a href="#" class="apply-button">Get Started</a>
+      <a href="https://www.techtarget.com/searchenterpriseai/definition/AI-Artificial-Intelligence#:~:text=Artificial%20intelligence%20is%20the%20simulation,speech%20recognition%20and%20machine%20vision." target="_blank" class="secondary-button">Discover more</a>
+      <p>Coded By Joyce Nhlengetwa</p>
+    </div>
+  </div>
+
+  <script>const applyButton = document.querySelector('.apply-button');
+
+    applyButton.addEventListener('click', function(event) {
+      event.preventDefault();
+      let name = prompt('Please enter your name:');
+      if (name) {
+        alert(`Hello, ${name}! Welcome to the exciting world of Artificial Intelligence!`);
+      } else {
+        alert('Hello there! Welcome to the exciting world of Artificial Intelligence!');
+      }
+    });
+    </script>
+</body>
+</html>
